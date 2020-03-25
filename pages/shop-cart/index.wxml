@@ -1,0 +1,8 @@
+<import src="../template-cart/template-cart.wxml" />
+<view class="page">
+  <view class="page__bd">
+    <view class="container">
+      <template is="{{goodsList.list.length > 0 ? 'cart-goods-list' : 'no-goods'}}" data="{{...goodsList}}"></template>
+    </view>
+  </view>
+</view>

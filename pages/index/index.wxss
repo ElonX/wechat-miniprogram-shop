@@ -1,0 +1,94 @@
+/* 轮播图 */
+.swiper-container{
+  width: 750rpx;
+  position: relative;  
+}
+.swiper_box {
+  width: 750rpx;
+  height:375rpx;
+}
+swiper-item image {
+  width: 750rpx;
+  height:375rpx;
+}
+.swiper-container .dots{  
+  position: absolute;  
+  left: 0;  
+  right: 0;  
+  bottom: 20rpx;  
+  display: flex;  
+  justify-content: center;  
+}  
+.swiper-container .dots .dot{  
+  margin: 0 8rpx;  
+  width: 14rpx;  
+  height: 14rpx;  
+  background: #fff;  
+  border-radius: 50%;  
+  transition: all .6s;  
+  opacity: .5;
+}  
+.swiper-container .dots .dot.active{  
+  width: 14rpx;  
+  opacity: 1;
+}
+.recommend-title {
+  text-align: center;
+  font-size: 38rpx;
+  height: 38rpx;
+  line-height: 38rpx;
+  margin-top: 50rpx;
+  margin-bottom: 20rpx;
+}
+.goods-container{
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap:wrap;
+  box-sizing: content-box;
+  padding: 24rpx;
+}
+.goods-box{
+  width: 339rpx;
+  height: 472rpx;
+  overflow: hidden;
+  margin-bottom: 24rpx;
+  border-radius:5px;
+}
+.goods-box .img-box{
+  width: 339rpx;
+  height: 339rpx;
+  overflow: hidden;
+}
+.goods-box .img-box image{
+   width: 339rpx;
+   height: 339rpx;
+}
+.goods-box .goods-title{
+  width: 280rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 24rpx;
+  padding: 24rpx 0 0rpx 0;
+  color:#000;
+  margin-left: 24rpx;
+}
+.goods-box .goods-price{
+  width: 280rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  padding: 10rpx 0;
+  color:#e64340;
+  margin-left: 24rpx;
+}
+.weui-cells {
+  background:none;
+  font-size: 26rpx;
+  line-height: 26rpx;
+}
+.weui-cells image {
+  margin-right: 5px;
+  vertical-align: middle;
+  width:30rpx; 
+  height: 30rpx;
+}

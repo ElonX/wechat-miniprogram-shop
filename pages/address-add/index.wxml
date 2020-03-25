@@ -1,0 +1,46 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="container">
+      <form bindsubmit="addAddress">
+        
+        <view class="peisong-way">
+          <view class="row-box">
+            <view class="row-label">姓名</view>
+            <view class="right-text">
+              <input name="linkName" type="text" class="liuyan" />
+            </view>
+          </view>
+          <view class="row-box">
+            <view class="row-label">电话</view>
+            <view class="right-text">
+              <input name="mobile" type="text" class="liuyan" />
+            </view>
+          </view>
+          <view class="row-box">
+            <view class="row-label">省/直辖市</view>
+            <view class="right-text">
+              <input name="province" type="text" class="liuyan" />
+            </view>
+          </view>
+          <view class="row-box">
+            <view class="row-label">城市</view>
+            <view class="right-text">
+              <input name="city" type="text" class="liuyan" />
+            </view>
+          </view>
+          <view class="row-box">
+            <view class="row-label">详细地址</view>
+            <view class="right-text">
+              <input name="address" type="text" class="liuyan" placeholder="区 街道 门牌号 楼-层-室" />
+            </view>
+          </view>
+
+        </view>
+
+        <view class="jiesuan-box">
+          <button class="weui-btn" type="primary" formType="submit">确认添加</button>
+        </view>
+      </form>
+    </view>
+  </view>
+</view>

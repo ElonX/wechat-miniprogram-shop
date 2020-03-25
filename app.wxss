@@ -1,0 +1,15 @@
+/**app.wxss**/
+@import 'weui/weui.wxss';
+
+.page {
+  background-color: #f6f0e3;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.wxParse-img {
+  display: block !important;
+}
+.space {
+  height:20rpx;
+  background-color: #F2f2f2;
+}

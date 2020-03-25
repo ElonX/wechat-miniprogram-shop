@@ -1,0 +1,7 @@
+/* pages/shop-cart/index.wxss */
+@import "../template-cart/template-cart.wxss";
+.pos-fiexd{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

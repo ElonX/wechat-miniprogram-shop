@@ -1,0 +1,50 @@
+<view class="page">
+  <view class="page__bd">
+    <view class='goods-name'>{{goodsDetail.name}}</view> 
+
+
+    <view class="swiper-container">
+      <swiper class="swiper_box" bindchange="swiperchange">
+        <block wx:for="{{goodsDetail.detailImgUrl}}" wx:key="*this">
+          <swiper-item>
+            <image src="{{item}}" />
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="dots">
+        <block wx:for="{{goodsDetail.detailImgUrl}}" wx:key="*this">
+          <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+        </block>
+      </view>
+    </view>
+
+
+    <view class='goods-price'>¥ {{goodsPrice}}</view>
+
+
+    <view class="buy-num-box">
+      <view class="num-label">购买数量</view>
+      <view class="num-box">
+        <view class="num-jian {{buyNumber == buyNumMin ? 'hui': ''}}" bindtap="numJianTap">-</view>
+        <view class="num-input">
+          <input type="number" value="{{buyNumber}}" disabled/>
+        </view>
+        <view class="num-jia {{buyNumber== buyNumMax ? 'hui': ''}}" bindtap="numJiaTap">+</view>
+      </view>
+    </view>
+    <view class='btns'>
+      <view wx:if="{{shopNum > 0}}">
+        <button class="weui-btn" style="width:250rpx;" type="primary" bindtap="goShopCar">去结算</button>
+      </view>  
+      <view>
+        <button class="weui-btn" style="width:350rpx;" type="warn" bindtap="addShopCar">加入购物车</button> 
+      </view>   
+    </view>
+  </view>
+  <view class='page__ft'>
+
+  </view>
+</view>
+<view wx:if="{{currentPages.length == 1}}" class='goIndex' bindtap="goIndex">
+  <image class="goIndex-icon" src="/images/nav/home-on.png"></image>
+</view>

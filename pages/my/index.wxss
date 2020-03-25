@@ -1,0 +1,75 @@
+/* pages/my/index.wxss */
+.asset {
+  border-bottom: 1rpx solid #eee0c0;
+  padding-bottom: 40rpx; 
+}
+.balance-name {
+  text-align: center;
+  font-size: 24rpx;
+  padding-top: 40rpx;
+}
+.balance-value {
+  text-align: center;
+  color:#e64340;
+  font-weight: 600;
+  margin-top: 20rpx;
+  font-size: 40rpx;
+}
+.weui-form-preview {
+  margin-top: 50rpx;
+  background:none;
+}
+.weui-panel {
+  background:none;
+}
+
+.order-shortcut {
+  display: flex;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.order-shortcut .item {
+  display: flex;
+  flex-direction: column;
+  width: 187rpx;
+  text-align: center;
+}
+.order-shortcut .item .icon {
+  width: 67rpx;
+  height: 67rpx;
+  margin-left: 60rpx;
+}
+.order-shortcut .item .text {
+  font-size: 12px;
+}
+.to-authorize{
+  border: none;
+  padding: 0rpx;
+  margin: 0rpx;
+  background: none;
+  border: none;
+  height: auto;
+  line-height: auto;
+}
+/* 绑定手机号 */
+.bind-phone-number{
+  margin: 20rpx;
+  width: 100%;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
