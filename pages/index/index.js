@@ -107,7 +107,7 @@ Page({
   },
   onShareAppMessage: function () {
     return {
-      title: '月亮只需六便士',
+      title: '店铺名称',
       path: '/pages/index/index?inviter_id=' + wx.getStorageSync('uid'),
       success: function (res) {
         // 转发成功
